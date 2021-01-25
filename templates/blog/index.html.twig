@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'blog_index' %}
+
+
+
+{% block sidebar %}
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+    {{ include('blog/_rss.html.twig') }}
+{% endblock %}
